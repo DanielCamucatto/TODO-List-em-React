@@ -1,31 +1,21 @@
 <h1 style=" text-align:center">  
-    <img src="nlw.jpeg" />
+    <img src="exemplo.png" />
 </h1>
 
-# NLW Return - impulse
+# TODO List
 
 ## Descrição: 
-Projeto desenvolvido pela Rocketseat com o objetivo de construir um compomente widget. 
+Projeto desenvolvido como exemplo de CRUD básico 
 ### Funcionalidades
-- Reportar ao criador do site <br>
-Bug: problemas encontrados no site; <br>
-Ideia: ulguma ideia de implementação de funções para os administradores do site; <br>
-Outros: Campo para o usuários escrever qualquer coisa não relacionada ao outros dois. 
-- Screenshot <br>
-o widget também pode tirar uma screenshot da tela para que o usuário envie para exemplificar melhor o que está acontecendo ou para demostrar como pode-se melhorar ou implementar uma funcionalidade. 
+- Listar as tarefas
+- Selecionar as tarefas e grifa-las quando terminado
+- apagar as tarefas
 ----
 ## Tecnologias utilizadas 
 ### Front-end:
 1. React - biblioteca Javascritp; 
-2. vite - ferramenta de construção para front-end;
-3. Typescript - superset que adiciona, entre outras coisas, tipagem ao javasrcript;
-4. Tailwind - framework css para construção de layout de forma simples e rápida; 
-5. Axios - cliente HTTP para o navegador.
+2. Typescript - superset que adiciona, entre outras coisas, tipagem ao javasrcript;
 
-### Back-end
-1. Node - Runtime Javascript para rodar no servidor. 
-2. Jest - ferramenta para testes unitários 
-3. Prisma - Ferramenta de ORM
 
 # Status do projeto
 Concluido :white_check_mark:
@@ -38,24 +28,6 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### 🎲 Rodando o Back End (servidor)
 
-```bash
-# Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd web
-
-# Vá para a pasta server
-$ cd server
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
-```
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash

@@ -2,12 +2,12 @@ import { useState } from 'react';
 import * as C from './App.styles'; 
 import { Item } from './types/Item';
 import {ListItem} from './components/Listitem';
-import { AddArea } from './components/AddArea'
+import { AddArea } from './components/AddArea';
+
 
 const App = () => {
   const [list, setList] = useState<Item[]>([
-    {id: 1, name: 'isso é um teste', done: true },
-    {id: 2, name: 'isso é um teste 2', done: false }
+    {id: 1, name: 'Este é um exemplo de lista', done: false },
 
   ]);
 
@@ -22,6 +22,17 @@ const handleAddtask = (taskName: string) => {
 
 }
 
+const handleTaskChange = (id: number, done: boolean) => {
+  let newList =[...list]; 
+  for(let i in newList){    
+    if(newList[i].id === id ){
+      console.log(newList[i]);
+      
+      newList[i].done = done;
+    }
+  }
+  setList(newList)
+}
 
 
   return(
@@ -32,9 +43,12 @@ const handleAddtask = (taskName: string) => {
         <AddArea onEnter={handleAddtask} />
                
         {list.map((item,index) =>(
-        <ListItem key={index} item={item} />
-        ))}
-
+          <ListItem 
+            key={index} 
+            item={item} 
+            onChange = {handleTaskChange}  
+          />
+          ))} 
       </C.Area>
     </C.Container>
   ); 
